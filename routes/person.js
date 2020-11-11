@@ -1,11 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const Person = require("../models/Person");
-// test route
-// @ route : localhost:3000/persons/test
-router.get("/test", (req, res) => {
-  res.send("this is a test");
-});
 
 //Create and Save a Record of a Model:
 //add a Person
