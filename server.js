@@ -1,14 +1,11 @@
 const express = require("express");
 const app = express();
 const router = require("./routes/person");
-
 const connectDB = require("./config/connectDB");
 
 //middleware
 app.use(express.json());
-
 app.use("/persons", router);
-
 
 // Connection database
 connectDB();
